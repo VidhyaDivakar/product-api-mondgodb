@@ -15,9 +15,9 @@ app.get("/", (req,  res) => {
     console.log("App Connected");
     res.send("Server is running");
 })
+app.use(express.json());
 
-
-app.use("/api/products", productsRoutes);
+app.use("/api/products", productRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);

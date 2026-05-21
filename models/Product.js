@@ -4,7 +4,7 @@ name: { type: String , required: true },
 description: { type: String , required: true },
 price: { type: Number , required: true },
 category: { type: String, required: true },
-inStock: { Boolean: true },
+inStock: { type: Boolean, default: true },
 });
 //creating a Mongoose schema called bookSchema that defines the structure and validation rules for book data in the database.”
 const Product = mongoose.model("Product", productSchema);
