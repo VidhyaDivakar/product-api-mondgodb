@@ -31,6 +31,7 @@ router.get("/:id", async (req, res) => {
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
+    console.log(req.query);
 });
 
 // (Update a Product) PUT /api/products/:id 
